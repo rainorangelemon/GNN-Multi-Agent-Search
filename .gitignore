@@ -1,0 +1,34 @@
+chenning
+nohup.out
+*.tar.gz
+*.txt
+*.png
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+.vscode/*
+data/*
+wandb/*
+# test_code/*
+# test_code/*.py
+# test_code/*.py
+# test_code/*.ipynb
+dataset/*
+results/*
+experiments/*
+simulator/monitor/*
+runs/*
+try.py
+test_code/*
+.idea/
+__pycache__/*
+agents/__pycache__/*
+graphs/__pycache__/*
+models/__pycache__/*
+datasetgenerator/__pycache__/*.pyc
+utils/__pycache__/*
+simulator/__pycache__/*
+simulator/visualization/*
+dataloader/__pycache__/*.pyc
+*.pyc
+log/*
+log_experiment/*

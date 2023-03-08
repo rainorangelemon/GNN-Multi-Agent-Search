@@ -1,5 +1,5 @@
 
-## Setup VirtualEnv
+## Installation
 To install, run the following:
 ``` bash
 conda create -n venv_MASearch python=3.8
@@ -18,8 +18,8 @@ pip install torchsummary
 pip install easydict
 ```
 
-## TODO: 
-add instruction for docker
+## Quickstart
+Play with the [tutorial notebook](./tutorial.ipynb).
 
 
 

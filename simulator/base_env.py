@@ -431,7 +431,7 @@ class BaseEnv(ABC):
         fig.savefig(file_name, bbox_inches="tight")
         return
 
-    def render_paths_animate(self, paths, goal_idxs, file_name, interpolate=20):
+    def render_paths_animate(self, paths, goal_idxs, file_name, interpolate=20, dpi=100):
         assert (('.gif' in file_name) or ('.mp4' in file_name))
         
         RAD_DEFAULT = self.RAD_DEFAULT  #(0.8*self.RAD_DEFAULT if self.config.env_name=='MazeEnv' else self.RAD_DEFAULT)
@@ -448,7 +448,7 @@ class BaseEnv(ABC):
 
         list_color = sns.color_palette("hls", num_agents)
         figsize = 40
-        fig = plt.figure(figsize=(figsize, figsize))
+        fig = plt.figure(figsize=(figsize, figsize), dpi=dpi)
         ax = fig.add_subplot(111)
 
         rec_rad = 2*RAD_DEFAULT

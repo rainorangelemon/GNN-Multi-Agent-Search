@@ -4,6 +4,7 @@ nohup.out
 *.tar.gz
 *.txt
 *.png
+.ipynb_checkpoints
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
 .vscode/*

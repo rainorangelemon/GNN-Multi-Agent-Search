@@ -10,10 +10,10 @@ In this repo, we provide the environments including:
 <th> Box Environment 👇 </th>
 </tr>
 <tr>
-<td text-align="center">
+<td align="center">
 <img src="figures/play_maze.gif" width="70%" height="70%"/>
 </td>
-<td text-align="center">
+<td align="center">
 <img src="figures/play_box.gif" width="70%" height="70%"/>
 </td>
 </tr>

@@ -1,3 +1,30 @@
+# 🗺  Accelerating Multi-Agent Planning Using Graph Transformers with Bounded Suboptimality (ICRA'2023)
+
+[paper](https://arxiv.org/abs/2301.08451) | [project page](https://rainorangelemon.github.io/ICRA2023/)
+
+In this repo, we provide the environments including:
+
+<table>
+<tr>
+<th> Maze Environment 👇 </th>
+<th> Box Environment 👇 </th>
+</tr>
+<tr>
+<td text-align="center">
+<img src="figures/play_maze.gif" width="70%" height="70%"/>
+</td>
+<td text-align="center">
+<img src="figures/play_box.gif" width="70%" height="70%"/>
+</td>
+</tr>
+</table>
+
+and the algorithms that we compare with
+
+- [Our Graph Transformer Planner](expert/CBS_GNN.py)
+- [Conflict-Based Search Planner](expert/CBS.py)
+- [Enhanced Conflict-Based Search Planner](expert/ECBS.py)
+- [Optimal Reciprocal Collision Avoidance Planner](expert/ORCA_MAS.py)
 
 ## Installation
 To install, run the following:
@@ -19,9 +46,7 @@ pip install easydict
 ```
 
 ## Quickstart
-Play with the [tutorial notebook](./tutorial.ipynb).
-
-
+We provide an example to plan on Maze and Box with the CBS planner in the [tutorial notebook](./tutorial.ipynb). Using other planners can be easily done by replacing the `CBSPlanner` to other planners' classes.
 
 ## Dataset Generation
 To generate dataset:

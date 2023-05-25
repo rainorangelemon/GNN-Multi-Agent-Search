@@ -181,9 +181,9 @@ def process_config(config):
     :param json_file: the path of the config file
     :return: config object(namespace)
     """
-    print("THE Configuration of your experiment ..")
+    # print("THE Configuration of your experiment ..")
 
-    pprint(vars(config))
+    # pprint(vars(config))
 
     # making sure that you have provided the exp_name.
     try:
@@ -225,13 +225,13 @@ def process_config(config):
         config.checkpoint_dir_load = os.path.join(config.save_data, "experiments", config.exp_name_load, "checkpoints/")
         # config.exp_name = os.path.join(f"{config.exp_net}",  config.env_name, config.exp_time)
 
-        print(" ************** Con train  ********************** ")
-        print("The checkpoint_dir_load name is {}".format(config.checkpoint_dir_load))
+        # print(" ************** Con train  ********************** ")
+        # print("The checkpoint_dir_load name is {}".format(config.checkpoint_dir_load))
 
     
     config.exp_name = os.path.join("{}".format(config.exp_name),  config.env_name, config.exp_time)
     config.checkpoint_dir = os.path.join(config.save_data, "experiments", config.exp_name, "checkpoints/")
-    print("The checkpoint_dir name is {}".format(config.checkpoint_dir))
+    # print("The checkpoint_dir name is {}".format(config.checkpoint_dir))
 
     
     # create some important directories to be used for that experiment.
@@ -247,8 +247,8 @@ def process_config(config):
     # model_setup logging in the project
     setup_logging(config.log_dir)
 
-    logging.getLogger().info("Hi, This is root.")
-    logging.getLogger().info("After the configurations are successfully processed and dirs are created.")
-    logging.getLogger().info("The pipeline of the project will begin now.")
+    # logging.getLogger().info("Hi, This is root.")
+    # logging.getLogger().info("After the configurations are successfully processed and dirs are created.")
+    # logging.getLogger().info("The pipeline of the project will begin now.")
 
     return config
